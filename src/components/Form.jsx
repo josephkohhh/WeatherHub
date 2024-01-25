@@ -78,7 +78,7 @@ export const Form = () => {
         // Update state with current weather data
         setData({
           ...data,
-          image: `http://openweathermap.org/img/w/${currentWeatherData.weather[0].icon}.png`,
+          image: `https://openweathermap.org/img/w/${currentWeatherData.weather[0].icon}.png`,
           celcius: currentWeatherData.main.temp,
           feels: currentWeatherData.main.feels_like,
           description: currentWeatherData.weather[0].description,
