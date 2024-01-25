@@ -491,11 +491,9 @@ export const About = () => {
             >
               Slice()
             </Typography>
-            <Box sx={{ fontSize: { xs: "6px", sm: "1rem", md: "1rem" } }}>
-              <SyntaxHighlighter language="jsx" style={vsDark}>
-                {arraySliceCodeSnippet}
-              </SyntaxHighlighter>
-            </Box>
+            <SyntaxHighlighter language="jsx" style={vsDark}>
+              {arraySliceCodeSnippet}
+            </SyntaxHighlighter>
             <Typography
               sx={{ fontSize: { xs: ".8rem", sm: "1rem", md: "1rem" } }}
             >
