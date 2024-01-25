@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  /* Add additional font weights and styles as needed */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
