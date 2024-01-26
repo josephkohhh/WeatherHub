@@ -21,9 +21,9 @@ To install and set up your project:
 ```bash
 cd path/to/your-desired-directory
 
-git clone -b feature/react https://github.com/josephkohhh/WeatherHubPro.git
+git clone -b feature/react https://github.com/josephkohhh/WeatherHub.git
 
-cd WeatherHubPro
+cd WeatherHub
 
 npm install
 npm install @mui/material @emotion/react @emotion/styled
@@ -36,7 +36,7 @@ npm install react-syntax-highlighter
 
 ## Getting Started
 
-OpenWeatherMap provides a free API key for a free tier plan
+OpenWeatherMap provides a free API key for a free tier plan.
 
 - Create An Account
   - Go to the OpenWeatherMap website (https://openweathermap.org/).
@@ -55,7 +55,7 @@ const apiKey = "YOUR_OWN_API_KEY";
 
 ```
 
-It is important to note that you should always store any sensitive information in a server-side enviroment for security.
+It is important to note that you should always store sensitive information in a server-side environment for security.
 
 ## Features
 
