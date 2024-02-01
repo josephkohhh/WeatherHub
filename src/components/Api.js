@@ -7,7 +7,8 @@
 
 import axios from "axios";
 
-const apiKey = "YOUR_OWN_API_KEY";
+const apiKey = "123";
+// const apiKey = "YOUR_OWN_API_KEY";
 
 /**
  * Function: getCurrentWeather
