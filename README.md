@@ -2,19 +2,18 @@
 
 This repo contains source code for WeatherHub, a responsive and simple weather forecast API web app.
 
-<img src="/src/assets/images/web-ss.PNG" alt="Project Desktop View" title="Desktop View" width="550px" height="500px">
-
-<img src="/src/assets/images/mobile-ss.PNG" alt="Project Mobile View" title="Mobile View" width="280px" height="500px">
+<img src="/src/assets/images/wh-banner.PNG" alt="Banner Image" title="Banner Image" width="550px" height="450px">
 
 ## Table of Contents
 
-- [Installation](#installation)
+- [Installation](#Installation)
 - [Getting Started](#gettingstarted)
-- [Features](#features)
+- [Folder Structure](#FolderStructure)
+- [Features](#Features)
 
 ## Installation
 
-If you haven't install Nodejs, please download first from https://nodejs.org/en/download
+If you haven't download Nodejs, please install first from https://nodejs.org/en/download
 
 To install and set up your project:
 
@@ -26,11 +25,65 @@ git clone -b feature/react https://github.com/josephkohhh/WeatherHub.git
 cd WeatherHub
 
 npm install
-npm install @mui/material @emotion/react @emotion/styled
-npm install @mui/icons-material
-npm install react-router-dom
-npm install axios
-npm install react-syntax-highlighter
+
+```
+
+## Folder Structure
+
+```
+WeatherHub
+├─ .eslintrc.cjs
+├─ .gitignore
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ src
+│  ├─ App.css
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  ├─ assets
+│  │  └─ images
+│  │     ├─ air.svg
+│  │     ├─ wh_banner.PNG
+│  │     └─ Component-Diagram.png
+│  ├─ components
+│  │  ├─ containers
+│  │  │  ├─ AirPollution.jsx
+│  │  │  ├─ Current.jsx
+│  │  │  ├─ Forecast.jsx
+│  │  │  └─ WeatherHub.jsx
+│  │  ├─ form
+│  │  │  └─ Form.jsx
+│  │  ├─ theme
+│  │  │  └─ FontTheme.js
+│  │  └─ ui
+│  │     ├─ AboutTitle.jsx
+│  │     ├─ AccordionDiagram.jsx
+│  │     ├─ Diagram.jsx
+│  │     ├─ InfoStack.jsx
+│  │     ├─ IntroTitle.jsx
+│  │     ├─ Navbar.jsx
+│  │     ├─ SkeletonLayout.jsx
+│  │     ├─ TableDiagram.jsx
+│  │     └─ UserInput.jsx
+│  ├─ data
+│  │  └─ constants.js
+│  ├─ fonts
+│  │  ├─ Poppins-Regular.ttf
+│  │  └─ ...
+│  ├─ hooks
+│  │  └─ StateManager.jsx
+│  ├─ lib
+│  │  └─ ReactSyntaxHighligherComponent.jsx
+│  ├─ pages
+│  │  ├─ About.jsx
+│  │  └─ Home.jsx
+│  ├─ services
+│  │  └─ api.js
+│  └─ utils
+│     └─ calculateDateTime.js
+└─ vite.config.js
 
 ```
 
