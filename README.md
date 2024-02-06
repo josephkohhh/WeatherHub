@@ -28,6 +28,29 @@ npm install
 
 ```
 
+## Getting Started
+
+OpenWeatherMap provides a free API key for a free tier plan.
+
+- Create An Account
+  - Go to the OpenWeatherMap website (https://openweathermap.org/).
+  - Sign up for a free account. If you already have an account, log in.
+- Access API Keys:
+  - After logging in, go to your account dashboard.
+- Choose a Plan:
+  - Select the free tier plan or any plan that suits your needs.
+- Generate API Key:
+  - Once you've selected a plan, generate a new API key.
+- Use the API Key:
+  - Assign the key in Api.js file
+
+```bash
+const apiKey = "YOUR_OWN_API_KEY";
+
+```
+
+It is important to note that you should always store sensitive information in a server-side environment for security.
+
 ## Folder Structure
 
 ```
@@ -86,29 +109,6 @@ WeatherHub
 └─ vite.config.js
 
 ```
-
-## Getting Started
-
-OpenWeatherMap provides a free API key for a free tier plan.
-
-- Create An Account
-  - Go to the OpenWeatherMap website (https://openweathermap.org/).
-  - Sign up for a free account. If you already have an account, log in.
-- Access API Keys:
-  - After logging in, go to your account dashboard.
-- Choose a Plan:
-  - Select the free tier plan or any plan that suits your needs.
-- Generate API Key:
-  - Once you've selected a plan, generate a new API key.
-- Use the API Key:
-  - Assign the key in Api.js file
-
-```bash
-const apiKey = "YOUR_OWN_API_KEY";
-
-```
-
-It is important to note that you should always store sensitive information in a server-side environment for security.
 
 ## Features
 
