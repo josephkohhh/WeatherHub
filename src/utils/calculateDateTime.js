@@ -46,5 +46,5 @@ export const formatDateTimeTo12Hour = (dateTimeString) => {
   const hours = date.getHours() % 12 || 12; // Convert 0 to 12 for 12-hour format
   const minutes = String(date.getMinutes()).padStart(2, "0");
   const ampm = date.getHours() >= 12 ? "PM" : "AM";
-  return `${month}/${day} ${hours}:${minutes} ${ampm}`;
+  return `${day}/${month} ${hours}:${minutes} ${ampm}`;
 };
