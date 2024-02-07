@@ -1,7 +1,7 @@
 /**
  * File: Diagram.jsx
  * Author: Joseph Koh
- * Description: Component to display architectural diagram.
+ * Description: Component to display architectural diagram
  */
 
 import { Typography } from "@mui/material";

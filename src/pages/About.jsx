@@ -1,3 +1,9 @@
+/**
+ * File: About.jsx
+ * Author: Joseph Koh
+ * Description: About component which represents the About page of the application
+ */
+
 import { Navbar } from "../components/ui/Navbar";
 import { AboutTitle } from "../components/ui/AboutTitle";
 import { IntroTitle } from "../components/ui/IntroTitle";

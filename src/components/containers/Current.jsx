@@ -1,3 +1,9 @@
+/**
+ * File: Current.jsx
+ * Author: Joseph Koh
+ * Description: Component for displaying current air quality information
+ */
+
 import { Box, Stack, Typography, Divider } from "@mui/material";
 import { InfoStack } from "../ui/InfoStack";
 import { fontGreyColor } from "../../data/constants";
@@ -11,7 +17,7 @@ export const Current = ({ current }) => {
       </Typography>
       <Divider />
 
-      {/* Wrapper */}
+      {/* Wrapper for main info */}
       <Box
         display={{ xs: "column", lg: "flex" }}
         justifyContent={"center"}
@@ -25,7 +31,7 @@ export const Current = ({ current }) => {
             display: "row",
           }}
         >
-          {/* City wrapper */}
+          {/* City */}
           <Stack
             direction={"row"}
             justifyContent={"center"}
@@ -52,7 +58,7 @@ export const Current = ({ current }) => {
             </Stack>
           </Stack>
 
-          {/* Desc wrapper */}
+          {/* Desc */}
           <Stack direction={"row"} justifyContent={"center"} marginBottom={2}>
             <Typography variant="h6" textAlign={"center"} style={fontGreyColor}>
               {current.desc}
@@ -60,7 +66,7 @@ export const Current = ({ current }) => {
           </Stack>
         </Box>
 
-        {/* Add info wrapper */}
+        {/* Wrapper for side info */}
         <Box
           sx={{
             width: { md: "100%", lg: "50%" },

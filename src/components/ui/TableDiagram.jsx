@@ -1,7 +1,7 @@
 /**
  * File: TableDiagram.jsx
  * Author: Joseph Koh
- * Description: Component for rendering a table diagram using Material-UI.
+ * Description: Component for rendering a table diagram using Material-UI
  */
 
 import { tableData } from "../../data/constants";

@@ -1,3 +1,9 @@
+/**
+ * File: AirPollution.jsx
+ * Author: Joseph Koh
+ * Description: Component for displaying current air quality information
+ */
+
 import { Box, Stack, Typography, Divider } from "@mui/material";
 import airIcon from "../../assets/images/air.svg";
 import { fontGreyColor } from "../../data/constants";

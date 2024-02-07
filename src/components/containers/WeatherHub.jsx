@@ -1,3 +1,9 @@
+/**
+ * File: WeatherHub.jsx
+ * Author: Joseph Koh
+ * Description: Main component for managing WeatherHub app
+ */
+
 import { Form } from "../form/Form";
 import { Grid, Typography } from "@mui/material";
 import { Current } from "./Current";
@@ -9,6 +15,7 @@ import { useState } from "react";
 import { SkeletonLayout } from "../ui/SkeletonLayout";
 
 export const WeatherHub = () => {
+  // Style
   const gridStyles = {
     backgroundColor: "#FFFF",
     borderRadius: "10px",
@@ -21,6 +28,7 @@ export const WeatherHub = () => {
   const [loading, setLoading] = useState(false);
   return (
     <>
+      {/* Render Form component */}
       <Form
         loading={loading}
         setLoading={setLoading}
@@ -36,11 +44,12 @@ export const WeatherHub = () => {
 
       <Grid
         container
-        width={"60%"}
+        width={{ xs: "80%", sm: "60%" }}
         margin={"auto"}
         justifyContent={"space-between"}
         gap={1}
       >
+        {/* Render Current component */}
         <Grid item xs={12} sm={12} md={7} style={gridStyles}>
           {loading ? (
             <SkeletonLayout>
@@ -50,6 +59,8 @@ export const WeatherHub = () => {
             <Current current={current} />
           )}
         </Grid>
+
+        {/* Render AirPollution component */}
         <Grid item xs={12} sm={12} md={4.5} style={gridStyles}>
           {loading ? (
             <SkeletonLayout>
@@ -69,16 +80,17 @@ export const WeatherHub = () => {
 
       <Grid
         container
-        width={"60%"}
+        width={{ xs: "80%", sm: "60%" }}
         margin={"auto"}
         justifyContent={"space-between"}
         marginBottom={2}
       >
+        {/* Render Forecast component */}
         {forecast.map((i, index) => (
           <Grid
             item
             key={index}
-            xs={12}
+            xs={5.9}
             sm={5.9}
             md={1.9}
             marginTop={1}

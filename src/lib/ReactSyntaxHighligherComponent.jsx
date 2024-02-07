@@ -1,7 +1,7 @@
 /**
  * File: ReactSyntaxHighligherComponent.jsx
  * Author: Joseph Koh
- * Description: Component for syntax highlighting using Prism with Darcula theme.
+ * Description: Component for syntax highlighting using Prism with Darcula theme
  */
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";

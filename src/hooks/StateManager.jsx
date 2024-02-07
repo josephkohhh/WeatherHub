@@ -1,5 +1,12 @@
+/**
+ * File: useWeatherState.js
+ * Author: Joseph Koh
+ * Description: A custom hook for managing weather state
+ */
+
 import { useState } from "react";
 
+// Initial state for weather data
 const initState = {
   location: "",
   current: {},
@@ -10,6 +17,7 @@ const initState = {
 export const useWeatherState = () => {
   const [state, setState] = useState(initState);
 
+  // Setters
   const setLocation = (location) => setState((prev) => ({ ...prev, location }));
 
   const setCurrent = (current) => setState((prev) => ({ ...prev, current }));

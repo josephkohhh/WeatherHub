@@ -1,3 +1,9 @@
+/**
+ * File: UserInput.jsx
+ * Author: Joseph Koh
+ * Description: Component for displaying text field for user input
+ */
+
 import { TextField, InputAdornment } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 

@@ -1,3 +1,9 @@
+/**
+ * File: calculateDateTime.js
+ * Author: Joseph Koh
+ * Description: Contains functions for calculating and formatting datetime
+ */
+
 // Function to get current date time in 24h format YYYY-MM-DD HH:mm:ss
 export const getCurrentDateTime = () => {
   const now = new Date();
@@ -17,7 +23,7 @@ export const getCurrentDateTime = () => {
 export const getNextDayMidnightDateTime = () => {
   const now = new Date();
 
-  // Add 2 day to the current date
+  // Add 2 days to the current date
   const nextDay = new Date(now);
   nextDay.setDate(now.getDate() + 2);
 
@@ -34,7 +40,7 @@ export const getNextDayMidnightDateTime = () => {
   return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 };
 
-// Function to convert date time to 12 hour format
+// Function to convert datetime to 12 hour format
 export const formatDateTimeTo12Hour = (dateTimeString) => {
   const date = new Date(dateTimeString);
 

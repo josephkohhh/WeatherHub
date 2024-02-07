@@ -1,7 +1,15 @@
+/**
+ * File: api.js
+ * Author: Joseph Koh
+ * Description: Contains functions for fetching data from OpenWeatherMap API
+ */
+
 import axios from "axios";
 
+// API key for accessing OpenWeatherMap API
 const apiKey = "YOUR_OWN_API_KEY";
 
+// Function to fetch current weather data API
 export const getCurrentWeather = async (location) => {
   try {
     const response = await axios.get(
@@ -13,6 +21,7 @@ export const getCurrentWeather = async (location) => {
   }
 };
 
+// Function to fetch air pollution data API
 export const getAirPollution = async (lat, lon) => {
   try {
     const response = await axios.get(
@@ -24,6 +33,7 @@ export const getAirPollution = async (lat, lon) => {
   }
 };
 
+// Function to fetch forecast data API
 export const getForecast = async (lat, lon) => {
   try {
     const response = await axios.get(

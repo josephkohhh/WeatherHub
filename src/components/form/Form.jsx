@@ -1,3 +1,9 @@
+/**
+ * File: Form.jsx
+ * Author: Joseph Koh
+ * Description: Component for user to submit search request
+ */
+
 import { UserInput } from "../ui/UserInput";
 import { Stack } from "@mui/material";
 import {
@@ -46,6 +52,7 @@ export const Form = ({
         humidity: currentData.main.humidity,
       });
 
+      // Get lat & lon
       const lat = currentData.coord.lat;
       const lon = currentData.coord.lon;
 
@@ -95,14 +102,14 @@ export const Form = ({
       }
       // Handle other errors
       else {
-        alert("An error occurred:", error);
+        alert("An error occurred, please try again later...");
       }
     } finally {
       setLoading(false);
     }
   };
 
-  // useEffect to fetch weather data for SG on first render
+  // Effect to fetch weather data for SG on first render
   useEffect(() => {
     fetchData("Singapore");
   }, []);
@@ -110,8 +117,10 @@ export const Form = ({
   // Function to handle search location
   const searchLocation = (event) => {
     event.preventDefault();
+
     fetchData(location);
-    setLocation("");
+
+    setLocation(""); // Reset search field
   };
   return (
     <>

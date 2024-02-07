@@ -1,3 +1,9 @@
+/**
+ * File: Navbar.jsx
+ * Author: Joseph Koh
+ * Description: Navbar component for navigation within the app
+ */
+
 import {
   AppBar,
   Toolbar,
@@ -16,6 +22,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+  // Styles
   const navLinkStyle = {
     textDecoration: "none",
     color: "#F9F9F9",
@@ -25,15 +32,17 @@ export const Navbar = () => {
     color: "#000",
   };
   const [anchorEl, setAnchorEl] = useState(false);
-  const handleOpenMenu = (event) => setAnchorEl(event.currentTarget);
-  const handleCloseMenu = () => setAnchorEl(false);
+  const handleOpenMenu = (event) => setAnchorEl(event.currentTarget); // Function to handle opening menu
+  const handleCloseMenu = () => setAnchorEl(false); // Function to handle closing menu
 
+  // Effect to handle closing menu on window resize
   useEffect(() => {
     const handleResize = () => handleCloseMenu();
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("listener", handleResize);
   }, []);
+
   return (
     <AppBar position={"static"} elevation={0} sx={{ bgcolor: "#325EA8" }}>
       <Toolbar>

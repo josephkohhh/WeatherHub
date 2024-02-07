@@ -1,6 +1,13 @@
+/**
+ * File: SkeletonLayout.jsx
+ * Author: Joseph Koh
+ * Description: Component for displaying loading skeleton layout
+ */
+
 import { Skeleton } from "@mui/material";
 
 export const SkeletonLayout = ({ children }) => {
+  // Style
   const skeletonStyles = {
     backgroundColor: "#EEEEEE",
     borderRadius: "10px",

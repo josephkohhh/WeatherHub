@@ -1,7 +1,7 @@
 /**
  * File: AccordionDiagram.jsx
  * Author: Joseph Koh
- * Description: Component showcasing various code snippets and explanations for TaskMaster app features.
+ * Description: Component showcasing various code snippets and explanations for WeatherHub app features
  */
 
 import {

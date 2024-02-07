@@ -1,3 +1,9 @@
+/**
+ * File: Forecast.jsx
+ * Author: Joseph Koh
+ * Description: Component for displaying forecast information
+ */
+
 import { Stack, Typography } from "@mui/material";
 import { fontGreyColor } from "../../data/constants";
 
