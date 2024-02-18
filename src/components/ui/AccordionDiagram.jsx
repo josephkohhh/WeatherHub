@@ -142,8 +142,8 @@ export const AccordionDiagram = () => {
             language={"javascript"}
           />
           <Typography {...fontSizing} style={textAlignStart}>
-            Using built in useState hook to manage the user input task, nanoid()
-            is used to assign the id upon form submission.
+            Using built in useState hook to manage loading state. MUI skeleton
+            will render if loading is TRUE.
           </Typography>
 
           <br />
